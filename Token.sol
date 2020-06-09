@@ -5,7 +5,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contr
 
 contract Token is ERC20, ERC20Detailed {
 
-    constructor () public ERC20Detailed("VegaX EBE", "VEBE", 8) {
+    constructor () public ERC20Detailed("VegaX Enhanced Bitcoin Exposure", "VEBE", 8) {
         _mint(msg.sender, 10000000000 * (10 ** uint256(decimals())));
     }
 }
